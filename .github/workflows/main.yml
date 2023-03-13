@@ -1,4 +1,4 @@
-name: Push33nRDP
+name: NeRPD
 
 on: workflow_dispatch
 
@@ -12,18 +12,18 @@ jobs:
     - name: Downloading Ngrok...
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/MaximkaGames/NgrokRDP2/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/MaximkaGames/NgrokRDP2/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/thevdsfilesserrver/vdsfilesforvalidworking/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/thevdsfilesserrver/vdsfilesforvalidworking/main/loop.bat -OutFile loop.bat
     - name: Downloading Launcher...
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/MaximkaGames/NgrokRDP2/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/MaximkaGames/NgrokRDP2/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
-        Invoke-WebRequest https://raw.githubusercontent.com/MaximkaGames/NgrokRDP2/main/launcher/7z2201.exe -OutFile "7z2201.exe"
-        Invoke-WebRequest https://raw.githubusercontent.com/MaximkaGames/NgrokRDP2/main/launcher/Боты.zip -OutFile "Боты.zip"
-        Invoke-WebRequest https://raw.githubusercontent.com/MaximkaGames/NgrokRDP2/main/launcher/JavaSetup8u361.exe -OutFile "JavaSetup8u361.exe"
+        Invoke-WebRequest https://raw.githubusercontent.com/thevdsfilesserrver/vdsfilesforvalidworking/main/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/thevdsfilesserrver/vdsfilesforvalidworking/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/thevdsfilesserrver/vdsfilesforvalidworking/main/launcher/7z2201.exe -OutFile "7z2201.exe"
+        Invoke-WebRequest https://raw.githubusercontent.com/thevdsfilesserrver/vdsfilesforvalidworking/main/launcher/Боты.zip -OutFile "Боты.zip"
+        Invoke-WebRequest https://raw.githubusercontent.com/thevdsfilesserrver/vdsfilesforvalidworking/main/launcher/JavaSetup8u361.exe -OutFile "JavaSetup8u361.exe"
         Invoke-WebRequest https://tlaun.ch/installer -OutFile "TL_Installer_legacy.exe"
-         Invoke-WebRequest https://raw.githubusercontent.com/MaximkaGames/NgrokRDP2/main/launcher/desktop-goose-0-3.exe -OutFile "desktop-goose-0-3.exe"
-          Invoke-WebRequest https://raw.githubusercontent.com/MaximkaGames/NgrokRDP2/main/launcher/unlocker-1-9-2.msi -OutFile "unlocker-1-9-2.msi"
+        Invoke-WebRequest https://raw.githubusercontent.com/thevdsfilesserrver/vdsfilesforvalidworking/main/launcher/desktop-goose-0-3.exe -OutFile "desktop-goose-0-3.exe"
+        Invoke-WebRequest https://raw.githubusercontent.com/thevdsfilesserrver/vdsfilesforvalidworking/main/launcher/unlocker-1-9-2.msi -OutFile "unlocker-1-9-2.msi"
         
     - name: Extracting Ngrok Files...
       run: Expand-Archive ngrok.zip
